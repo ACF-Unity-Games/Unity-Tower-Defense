@@ -14,6 +14,7 @@ public class TowerShooter : MonoBehaviour
 
     private TowerInfo _towerInfo;
     private SpriteRenderer _spriteRenderer;
+    private CircleCollider2D _circCollider2D;
     private bool _isPlaced = false;
     private List<Transform> _enemiesColliding = new List<Transform>();
     private float _currReloadTime;
@@ -27,6 +28,7 @@ public class TowerShooter : MonoBehaviour
     {
         _towerInfo = tInfo;
         _spriteRenderer.sprite = _towerInfo.TowerSprite;
+        _circCollider2D.radius = _towerInfo.TowerRange;
         _isPlaced = true;
         Debug.Log("Tower has been placed!");
     }

@@ -101,8 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 2358325395360276710, guid: e39dff1995007614ebd63323af3ca02f, type: 3}
-  BulletMoveSpeed: 20
-  ReloadSpeed: 0.5
 --- !u!50 &6822867646822177162
 Rigidbody2D:
   serializedVersion: 4
