@@ -22,7 +22,8 @@ public class TowerShooter : MonoBehaviour
     private void Awake()
     {
         Debug.Assert(BulletPrefab.GetComponent<BulletHandler>() != null, "BulletPrefab attached requires a BulletHandler!", this);   
-        _spriteRenderer = GetComponent<SpriteRenderer>();   
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _circCollider2D = GetComponent<CircleCollider2D>();
     }
     public void Initialize(TowerInfo tInfo)
     {
