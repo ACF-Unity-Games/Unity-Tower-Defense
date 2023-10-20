@@ -8,7 +8,7 @@ public class TowerInfo : ScriptableObject
 
     [Header("Tower Properties")]
     public Sprite TowerSprite;
-    [Range(1, 3)]
+    [Range(1, 10)]
     public float TowerRange;
     [Range(0.1f, 3f)]
     public float ReloadSpeed = 0.5f;
