@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f297576b633f25448117a71fb5a5149, type: 3}
-  m_Name: Example
+  m_Name: Red
   m_EditorClassIdentifier: 
-  TowerSprite: {fileID: 21300000, guid: 7369e48b0e51cd54dbfd47dfda785847, type: 3}
-  TowerRange: 0
-  ReloadSpeed: 0.5
-  BulletSprite: {fileID: 21300000, guid: 7369e48b0e51cd54dbfd47dfda785847, type: 3}
-  BulletMoveSpeed: 20
+  TowerSprite: {fileID: -1535290552, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+  TowerRange: 1
+  ReloadSpeed: 0.1
+  BulletSprite: {fileID: 1462960244, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+  BulletMoveSpeed: 10
