@@ -42,7 +42,6 @@ public class BulletHandler : MonoBehaviour
             {
                 healthHandler.CurrentHealth -= _bulletDamage;
             }
-            Debug.Log("Dealt damage to enemy!");
             Destroy(gameObject);
         }
     }

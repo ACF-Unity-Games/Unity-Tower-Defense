@@ -30,6 +30,10 @@ public class TowerShooter : MonoBehaviour
         _towerInfo = tInfo;
         _spriteRenderer.sprite = _towerInfo.TowerSprite;
         _circCollider2D.radius = _towerInfo.TowerRange;
+    }
+
+    public void Place()
+    {
         _isPlaced = true;
         Debug.Log("Tower has been placed!");
     }

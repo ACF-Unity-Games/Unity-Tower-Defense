@@ -14,6 +14,10 @@ public class TowerInfo : ScriptableObject
     [Range(0.1f, 3f)]
     public float ReloadSpeed = 0.5f;
 
+    [Header("Slot Properties")]
+    public Sprite SlotSprite;
+    public int SlotCost;
+
     [Header("Bullet Properties")]
     public Sprite BulletSprite;
     [Range(10, 60)]

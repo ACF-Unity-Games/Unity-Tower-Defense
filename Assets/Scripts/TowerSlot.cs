@@ -2,9 +2,13 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
+[RequireComponent(typeof(Image))]
 public class TowerSlot : MonoBehaviour, IPointerClickHandler
 {
+    [Header("Object Assignments")]
+    public TextMeshProUGUI TowerCostText;
     [Header("Prefab Assignment")]
     public GameObject TowerPrefab; // The tower prefab to be placed.
     [Header("Tower To Place")]
@@ -13,11 +17,23 @@ public class TowerSlot : MonoBehaviour, IPointerClickHandler
     private GameObject _currentTower; // The tower currently being placed.
     private bool _isPlacing = false; // Flag to track whether a tower is being placed.
 
+    private void Awake()
+    {
+        Image image = GetComponent<Image>();
+        image.sprite = TowerInfo.SlotSprite;
+        image.SetNativeSize();
+        if (TowerCostText != null)
+        {
+            TowerCostText.text = TowerInfo.SlotCost.ToString();
+        }
+    }
+
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         if (_isPlacing) return;
         // Create a new tower and set it as the current tower
         _currentTower = Instantiate(TowerPrefab);
+        _currentTower.GetComponent<TowerShooter>()?.Initialize(TowerInfo);
         _isPlacing = true;
     }
 
@@ -33,7 +49,7 @@ public class TowerSlot : MonoBehaviour, IPointerClickHandler
             if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
             {
                 _isPlacing = false;
-                _currentTower.GetComponent<TowerShooter>()?.Initialize(TowerInfo);
+                _currentTower.GetComponent<TowerShooter>()?.Place();
                 _currentTower = null;
             }
         }
