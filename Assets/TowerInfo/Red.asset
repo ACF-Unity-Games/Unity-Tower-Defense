@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Red
   m_EditorClassIdentifier: 
   TowerSprite: {fileID: -1535290552, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-  TowerRange: 1
+  TowerScale: {x: 1, y: 1}
+  TowerRange: 2.34
   ReloadSpeed: 0.1
+  SlotSprite: {fileID: 0}
+  SlotCost: 0
   BulletSprite: {fileID: 1462960244, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-  BulletMoveSpeed: 10
+  BulletMoveSpeed: 21.2
+  BulletDamage: 3

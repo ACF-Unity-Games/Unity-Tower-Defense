@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f297576b633f25448117a71fb5a5149, type: 3}
   m_Name: Purple
   m_EditorClassIdentifier: 
-  TowerSprite: {fileID: 0}
-  TowerRange: 0
-  ReloadSpeed: 0.5
-  BulletSprite: {fileID: 0}
-  BulletMoveSpeed: 20
+  TowerSprite: {fileID: -1815983215, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+  TowerScale: {x: 1, y: 1}
+  TowerRange: 10
+  ReloadSpeed: 0.1
+  SlotSprite: {fileID: 0}
+  SlotCost: 0
+  BulletSprite: {fileID: 210708961, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+  BulletMoveSpeed: 10
+  BulletDamage: 1

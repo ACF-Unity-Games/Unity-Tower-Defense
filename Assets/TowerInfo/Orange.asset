@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Orange
   m_EditorClassIdentifier: 
   TowerSprite: {fileID: -1448710743, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-  TowerRange: 1.697
-  ReloadSpeed: 0.1
+  TowerScale: {x: 1, y: 1}
+  TowerRange: 3.42
+  ReloadSpeed: 0.49
+  SlotSprite: {fileID: 0}
+  SlotCost: 0
   BulletSprite: {fileID: 1828036987, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-  BulletMoveSpeed: 60
+  BulletMoveSpeed: 31.4
+  BulletDamage: 3
