@@ -30,6 +30,10 @@ public class TowerShooter : MonoBehaviour
         _towerInfo = tInfo;
         _spriteRenderer.sprite = _towerInfo.TowerSprite;
         _circCollider2D.radius = _towerInfo.TowerRange;
+    }
+
+    public void Place()
+    {
         _isPlaced = true;
         Debug.Log("Tower has been placed!");
     }
@@ -63,7 +67,7 @@ public class TowerShooter : MonoBehaviour
             {
                 _currReloadTime = 0;
                 GameObject b = Instantiate(BulletPrefab, transform.position, transform.rotation);
-                b.GetComponent<BulletHandler>().Initialize(_towerInfo.BulletMoveSpeed);
+                b.GetComponent<BulletHandler>().Initialize(_towerInfo.BulletSprite, _towerInfo.BulletMoveSpeed, _towerInfo.BulletDamage);
                 Debug.Log("Shoot!");
             }
         }
