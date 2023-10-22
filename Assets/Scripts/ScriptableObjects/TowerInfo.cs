@@ -2,6 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class BulletInfo
+{
+    public Sprite BulletSprite;
+    [Range(10, 60)]
+    public float BulletMoveSpeed = 20;
+    public int BulletDamage;
+    [Tooltip("Time bullet will survive while in mid-air (in seconds)")]
+    public float BulletLifetime = 1;
+}
+
 [CreateAssetMenu(fileName = "TowerInfo", menuName = "ScriptableObjects/TowerInfo", order = 1)]
 public class TowerInfo : ScriptableObject
 {
@@ -19,11 +30,6 @@ public class TowerInfo : ScriptableObject
     public int SlotCost;
 
     [Header("Bullet Properties")]
-    public Sprite BulletSprite;
-    [Range(10, 60)]
-    public float BulletMoveSpeed = 20;
-    public int BulletDamage;
-
-
+    public BulletInfo BulletInfo;
 
 }
