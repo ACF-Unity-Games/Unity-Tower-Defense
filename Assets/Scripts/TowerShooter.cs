@@ -67,8 +67,7 @@ public class TowerShooter : MonoBehaviour
             {
                 _currReloadTime = 0;
                 GameObject b = Instantiate(BulletPrefab, transform.position, transform.rotation);
-                b.GetComponent<BulletHandler>().Initialize(_towerInfo.BulletSprite, _towerInfo.BulletMoveSpeed, _towerInfo.BulletDamage);
-                Debug.Log("Shoot!");
+                b.GetComponent<BulletHandler>().Initialize(_towerInfo.BulletInfo);
             }
         }
     }

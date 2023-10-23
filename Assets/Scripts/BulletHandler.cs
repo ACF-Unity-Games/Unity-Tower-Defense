@@ -9,7 +9,6 @@ public class BulletHandler : MonoBehaviour
 {
 
     private int _bulletDamage;
-    
     private float _bulletMoveSpeed;
     private bool _isInitialized = false;
     private SpriteRenderer _spriteRenderer;
@@ -19,18 +18,25 @@ public class BulletHandler : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void Initialize(Sprite bulletSprite, float moveSpeed, int damage)
+    public void Initialize(BulletInfo bulletInfo)
     {
-        _spriteRenderer.sprite = bulletSprite;
-        _bulletMoveSpeed = moveSpeed;
-        _bulletDamage = damage;
+        _spriteRenderer.sprite = bulletInfo.BulletSprite;
+        _bulletMoveSpeed = bulletInfo.BulletMoveSpeed;
+        _bulletDamage = bulletInfo.BulletDamage;
         _isInitialized = true;
+        DestroyAfterTime(bulletInfo.BulletLifetime);
     }
 
     private void Update()
     {
         if (!_isInitialized) return;
         transform.Translate(_bulletMoveSpeed * Time.deltaTime, 0, 0);
+    }
+
+    private IEnumerator DestroyAfterTime(float lifetimeInSecs)
+    {
+        yield return new WaitForSeconds(lifetimeInSecs);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
