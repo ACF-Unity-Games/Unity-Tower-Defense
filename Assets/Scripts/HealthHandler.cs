@@ -16,17 +16,11 @@ public class HealthHandler : MonoBehaviour
         set
         {
             _currentHealth = value;
-            Debug.Log("Took damage! Now at " + _currentHealth.ToString() + " HP");
             if (_currentHealth <= 0)
             {
                 Destroy(gameObject);
             }
         }
-    }
-
-    private void Start()
-    {
-        CurrentHealth = 10;
     }
 
 }
