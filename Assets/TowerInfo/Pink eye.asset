@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f297576b633f25448117a71fb5a5149, type: 3}
-  m_Name: Orange
+  m_Name: Pink eye
   m_EditorClassIdentifier: 
-  TowerSprite: {fileID: -1448710743, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+  TowerSprite: {fileID: -2050998513, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
   TowerScale: {x: 1, y: 1}
-  TowerRange: 3.42
-  ReloadSpeed: 0.49
-  SlotSprite: {fileID: 1335302443, guid: 188712d2043d254468b765db25d61817, type: 3}
-  SlotCost: 200
+  TowerRange: 7.45
+  ReloadSpeed: 1.12
+  SlotSprite: {fileID: 1591175155, guid: 188712d2043d254468b765db25d61817, type: 3}
+  SlotCost: 300
   BulletInfo:
-    BulletSprite: {fileID: 1828036987, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-    BulletMoveSpeed: 20.4
-    BulletDamage: 3
-    BulletLifetime: 3
+    BulletSprite: {fileID: 1164867457, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+    BulletMoveSpeed: 20
+    BulletDamage: 2
+    BulletLifetime: 2

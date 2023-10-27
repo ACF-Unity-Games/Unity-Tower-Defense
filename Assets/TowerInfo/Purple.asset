@@ -16,8 +16,10 @@ MonoBehaviour:
   TowerScale: {x: 1, y: 1}
   TowerRange: 10
   ReloadSpeed: 0.1
-  SlotSprite: {fileID: 0}
-  SlotCost: 0
-  BulletSprite: {fileID: 210708961, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-  BulletMoveSpeed: 10
-  BulletDamage: 1
+  SlotSprite: {fileID: -440373446, guid: 188712d2043d254468b765db25d61817, type: 3}
+  SlotCost: 1250
+  BulletInfo:
+    BulletSprite: {fileID: 210708961, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
+    BulletMoveSpeed: 20
+    BulletDamage: 1
+    BulletLifetime: 1
