@@ -24,7 +24,7 @@ public class BulletHandler : MonoBehaviour
         _bulletMoveSpeed = bulletInfo.BulletMoveSpeed;
         _bulletDamage = bulletInfo.BulletDamage;
         _isInitialized = true;
-        DestroyAfterTime(bulletInfo.BulletLifetime);
+        StartCoroutine(DestroyAfterTime(bulletInfo.BulletLifetime));
     }
 
     private void Update()
