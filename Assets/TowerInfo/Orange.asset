@@ -23,3 +23,5 @@ MonoBehaviour:
     BulletMoveSpeed: 20.4
     BulletDamage: 3
     BulletLifetime: 3
+    BulletPierce: 100
+    BulletScale: {x: 1, y: 1}
