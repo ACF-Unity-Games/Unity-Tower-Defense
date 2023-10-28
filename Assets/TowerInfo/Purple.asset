@@ -20,6 +20,8 @@ MonoBehaviour:
   SlotCost: 1250
   BulletInfo:
     BulletSprite: {fileID: 210708961, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-    BulletMoveSpeed: 60
+    BulletMoveSpeed: 10
     BulletDamage: 1
     BulletLifetime: 1
+    BulletPierce: 1
+    BulletScale: {x: 2, y: 2}

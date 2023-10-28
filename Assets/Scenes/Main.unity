@@ -943,19 +943,19 @@ MonoBehaviour:
   - EnemyInfo: {fileID: 11400000, guid: 12144296899798c47b9a203492744009, type: 2}
     TimeBetweenSpawns: 0.1
   - EnemyInfo: {fileID: 11400000, guid: 05e2ea569cb8e514cb4607d799cec432, type: 2}
-    TimeBetweenSpawns: 1
+    TimeBetweenSpawns: 0.2
   - EnemyInfo: {fileID: 11400000, guid: 7935b60a7658237409ddfc7511b7c0e7, type: 2}
-    TimeBetweenSpawns: 2
+    TimeBetweenSpawns: 0.3
   - EnemyInfo: {fileID: 11400000, guid: d13b0ba375aad2e4aa721d6e2b72ea57, type: 2}
-    TimeBetweenSpawns: 3
+    TimeBetweenSpawns: 0.7
   - EnemyInfo: {fileID: 11400000, guid: bb1c5020a936b2e4d9a6b7e6513933eb, type: 2}
-    TimeBetweenSpawns: 4
+    TimeBetweenSpawns: 1
   - EnemyInfo: {fileID: 11400000, guid: 0bf4a291ca36e3542bdb37c188ed945f, type: 2}
-    TimeBetweenSpawns: 5
+    TimeBetweenSpawns: 1
   - EnemyInfo: {fileID: 11400000, guid: 95fd3c1e75684624c9e599dcc6209485, type: 2}
-    TimeBetweenSpawns: 6
+    TimeBetweenSpawns: 1
   - EnemyInfo: {fileID: 11400000, guid: 5799694f421c40f4c948f3f790e4d306, type: 2}
-    TimeBetweenSpawns: 7
+    TimeBetweenSpawns: 0.95
 --- !u!4 &1376703651
 Transform:
   m_ObjectHideFlags: 0
