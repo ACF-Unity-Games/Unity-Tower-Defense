@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(enemySpawnInfo.TimeBetweenSpawns);
         GameObject enemyObject = Instantiate(EnemyPrefab);
         enemyObject.GetComponent<EnemyHandler>().Initialize(enemySpawnInfo.EnemyInfo);
-        enemyObject.transform.position = new Vector3(Random.Range(-4, 4), Random.Range(-2, 2), 0);
+        enemyObject.transform.position = new Vector3(Random.Range(-4f, 4), Random.Range(-2f, 2), 0);
         StartCoroutine(SpawnEnemyAtInterval(enemySpawnInfo));
     }
 

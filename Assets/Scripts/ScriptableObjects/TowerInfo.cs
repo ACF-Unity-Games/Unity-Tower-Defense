@@ -11,6 +11,9 @@ public class BulletInfo
     public int BulletDamage;
     [Tooltip("Time bullet will survive while in mid-air (in seconds)")]
     public float BulletLifetime = 1;
+    [Tooltip("Amount of enemies bullet can damage until disappearing")]
+    public int BulletPierce = 1;
+    public Vector2 BulletScale = new Vector2(1, 1);
 }
 
 [CreateAssetMenu(fileName = "TowerInfo", menuName = "ScriptableObjects/TowerInfo", order = 1)]

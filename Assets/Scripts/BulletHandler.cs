@@ -8,10 +8,12 @@ using UnityEngine;
 public class BulletHandler : MonoBehaviour
 {
 
-    private int _bulletDamage;
-    private float _bulletMoveSpeed;
     private bool _isInitialized = false;
+    private BulletInfo _bulletInfo;
+
     private SpriteRenderer _spriteRenderer;
+
+    private List<Collider2D> _enemiesDamaged = new();
 
     private void Awake()
     {
@@ -20,9 +22,9 @@ public class BulletHandler : MonoBehaviour
 
     public void Initialize(BulletInfo bulletInfo)
     {
+        _bulletInfo = bulletInfo;
         _spriteRenderer.sprite = bulletInfo.BulletSprite;
-        _bulletMoveSpeed = bulletInfo.BulletMoveSpeed;
-        _bulletDamage = bulletInfo.BulletDamage;
+        transform.localScale = bulletInfo.BulletScale;
         _isInitialized = true;
         StartCoroutine(DestroyAfterTime(bulletInfo.BulletLifetime));
     }
@@ -30,7 +32,7 @@ public class BulletHandler : MonoBehaviour
     private void Update()
     {
         if (!_isInitialized) return;
-        transform.Translate(_bulletMoveSpeed * Time.deltaTime, 0, 0);
+        transform.Translate(_bulletInfo.BulletMoveSpeed * Time.deltaTime, 0, 0);
     }
 
     private IEnumerator DestroyAfterTime(float lifetimeInSecs)
@@ -41,14 +43,18 @@ public class BulletHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && !_enemiesDamaged.Contains(collision))
         {
+            _enemiesDamaged.Add(collision);
             HealthHandler healthHandler = collision.gameObject?.GetComponent<HealthHandler>();
             if (healthHandler != null)
             {
-                healthHandler.CurrentHealth -= _bulletDamage;
+                healthHandler.CurrentHealth -= _bulletInfo.BulletDamage;
             }
-            Destroy(gameObject);
+            if (_enemiesDamaged.Count >= Mathf.Max(1, _bulletInfo.BulletPierce))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
