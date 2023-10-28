@@ -956,6 +956,12 @@ MonoBehaviour:
     TimeBetweenSpawns: 1
   - EnemyInfo: {fileID: 11400000, guid: 5799694f421c40f4c948f3f790e4d306, type: 2}
     TimeBetweenSpawns: 0.95
+  - EnemyInfo: {fileID: 11400000, guid: 81b8e992aaaeae44581e7cebec1354a0, type: 2}
+    TimeBetweenSpawns: 1.5
+  - EnemyInfo: {fileID: 11400000, guid: 50e083e70afe2f34fba4e438bd179070, type: 2}
+    TimeBetweenSpawns: 1.7
+  - EnemyInfo: {fileID: 11400000, guid: 6c04e17160c73d1468ba35dce296619f, type: 2}
+    TimeBetweenSpawns: 2
 --- !u!4 &1376703651
 Transform:
   m_ObjectHideFlags: 0

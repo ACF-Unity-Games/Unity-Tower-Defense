@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 448340356c3a3be4d94804011699524c, type: 3}
-  m_Name: EnemyInfo 11
+  m_Name: 10
   m_EditorClassIdentifier: 
-  EnemySprite: {fileID: 0}
-  EnemyHealth: 0
+  EnemySprite: {fileID: 217390520, guid: 68f15239b7f229848a0d7040a59e7380, type: 3}
+  EnemyHealth: 50
   EnemyScale: {x: 1, y: 1}
+  EnemiesToSpawnOnDeath:
+  - EnemyInfo: {fileID: 11400000, guid: 5799694f421c40f4c948f3f790e4d306, type: 2}
+    EnemyCount: 3
+  - EnemyInfo: {fileID: 11400000, guid: 95fd3c1e75684624c9e599dcc6209485, type: 2}
+    EnemyCount: 3

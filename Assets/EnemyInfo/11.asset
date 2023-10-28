@@ -10,19 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 448340356c3a3be4d94804011699524c, type: 3}
-  m_Name: 9
+  m_Name: 11
   m_EditorClassIdentifier: 
-  EnemySprite: {fileID: 2021430062, guid: 68f15239b7f229848a0d7040a59e7380, type: 3}
-  EnemyHealth: 23
+  EnemySprite: {fileID: -1063609441, guid: 68f15239b7f229848a0d7040a59e7380, type: 3}
+  EnemyHealth: 100
   EnemyScale: {x: 1, y: 1}
   EnemiesToSpawnOnDeath:
-  - EnemyInfo: {fileID: 11400000, guid: 95fd3c1e75684624c9e599dcc6209485, type: 2}
-    EnemyCount: 4
   - EnemyInfo: {fileID: 11400000, guid: 0bf4a291ca36e3542bdb37c188ed945f, type: 2}
-    EnemyCount: 4
-  - EnemyInfo: {fileID: 11400000, guid: bb1c5020a936b2e4d9a6b7e6513933eb, type: 2}
-    EnemyCount: 4
-  - EnemyInfo: {fileID: 11400000, guid: d13b0ba375aad2e4aa721d6e2b72ea57, type: 2}
-    EnemyCount: 5
-  - EnemyInfo: {fileID: 11400000, guid: 7935b60a7658237409ddfc7511b7c0e7, type: 2}
+    EnemyCount: 10
+  - EnemyInfo: {fileID: 11400000, guid: 5799694f421c40f4c948f3f790e4d306, type: 2}
+    EnemyCount: 10
+  - EnemyInfo: {fileID: 11400000, guid: 95fd3c1e75684624c9e599dcc6209485, type: 2}
+    EnemyCount: 10
+  - EnemyInfo: {fileID: 11400000, guid: 81b8e992aaaeae44581e7cebec1354a0, type: 2}
     EnemyCount: 5

@@ -15,3 +15,4 @@ MonoBehaviour:
   EnemySprite: {fileID: -306724883, guid: 68f15239b7f229848a0d7040a59e7380, type: 3}
   EnemyHealth: 1
   EnemyScale: {x: 1, y: 1}
+  EnemiesToSpawnOnDeath: []
