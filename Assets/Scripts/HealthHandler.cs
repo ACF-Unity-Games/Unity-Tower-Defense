@@ -18,7 +18,8 @@ public class HealthHandler : MonoBehaviour
             _currentHealth = value;
             if (_currentHealth <= 0)
             {
-                Destroy(gameObject);
+                transform.Translate(0, 100, 0);
+                Destroy(gameObject, 0.01f);
             }
         }
     }
