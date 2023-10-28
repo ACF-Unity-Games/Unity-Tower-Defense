@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 448340356c3a3be4d94804011699524c, type: 3}
-  m_Name: TestEnemy
+  m_Name: EnemyInfo 12
   m_EditorClassIdentifier: 
-  EnemySprite: {fileID: -306724883, guid: 68f15239b7f229848a0d7040a59e7380, type: 3}
-  EnemyHealth: 10
+  EnemySprite: {fileID: 0}
+  EnemyHealth: 0
+  EnemyScale: {x: 1, y: 1}
