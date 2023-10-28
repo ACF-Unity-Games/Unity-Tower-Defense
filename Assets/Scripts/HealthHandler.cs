@@ -19,9 +19,17 @@ public class HealthHandler : MonoBehaviour
             if (_currentHealth <= 0)
             {
                 transform.Translate(0, 100, 0);
-                Destroy(gameObject, 0.01f);
+                // TODO: Make this not specific to enemies!
+                GetComponent<EnemyHandler>().OnDeath.Invoke();
+                StartCoroutine(ReturnAfterDelay());
             }
         }
+    }
+
+    private IEnumerator ReturnAfterDelay()
+    {
+        yield return new WaitForEndOfFrame();
+        ObjectPooler.Instance.ReturnEnemyToPool(gameObject);
     }
 
 }

@@ -13,15 +13,8 @@ public class EnemySpawnInfo
 public class EnemySpawner : MonoBehaviour
 {
 
-    [Header("Prefab Assignments")]
-    public GameObject EnemyPrefab;
     [Header("Enemy Spawn Information")]
     public List<EnemySpawnInfo> EnemiesToSpawn;
-
-    private void Awake()
-    {
-        Debug.Assert(EnemyPrefab.GetComponent<EnemyHandler>() != null, "Enemy prefab must have an enemy handler!", this);
-    }
 
     public void Start()
     {
@@ -34,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
     private IEnumerator SpawnEnemyAtInterval(EnemySpawnInfo enemySpawnInfo)
     {
         yield return new WaitForSeconds(enemySpawnInfo.TimeBetweenSpawns);
-        GameObject enemyObject = Instantiate(EnemyPrefab);
+        GameObject enemyObject = ObjectPooler.Instance.GetEnemyObject();
         enemyObject.GetComponent<EnemyHandler>().Initialize(enemySpawnInfo.EnemyInfo);
         enemyObject.transform.position = new Vector3(Random.Range(-4f, 4), Random.Range(-2f, 2), 0);
         StartCoroutine(SpawnEnemyAtInterval(enemySpawnInfo));
