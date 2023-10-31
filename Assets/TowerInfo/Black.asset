@@ -17,7 +17,7 @@ MonoBehaviour:
   TowerRange: 4.45
   ReloadSpeed: 3
   SlotSprite: {fileID: 1308382794, guid: 188712d2043d254468b765db25d61817, type: 3}
-  SlotCost: 450
+  SlotCost: 750
   BulletInfo:
     BulletSprite: {fileID: -1528805993, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
     BulletMoveSpeed: 10

@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Purple
   m_EditorClassIdentifier: 
   TowerSprite: {fileID: -1815983215, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
-  TowerScale: {x: 1, y: 1}
-  TowerRange: 10
-  ReloadSpeed: 0.23
+  TowerScale: {x: 2, y: 2}
+  TowerRange: 4.83
+  ReloadSpeed: 3
   SlotSprite: {fileID: -440373446, guid: 188712d2043d254468b765db25d61817, type: 3}
-  SlotCost: 6500
+  SlotCost: 2500
   BulletInfo:
     BulletSprite: {fileID: 210708961, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
     BulletMoveSpeed: 10
-    BulletDamage: 1
+    BulletDamage: 2
     BulletLifetime: 1
     BulletPierce: 2147483647
-    BulletScale: {x: 3, y: 3}
+    BulletScale: {x: 2, y: 2}
