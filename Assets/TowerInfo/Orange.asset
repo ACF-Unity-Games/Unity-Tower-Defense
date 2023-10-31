@@ -21,7 +21,7 @@ MonoBehaviour:
   BulletInfo:
     BulletSprite: {fileID: 1828036987, guid: 249a6b1f8d1179e4596be866311ffc03, type: 3}
     BulletMoveSpeed: 60
-    BulletDamage: 1
+    BulletDamage: 15
     BulletLifetime: 3
     BulletPierce: 2147483647
     BulletScale: {x: 1, y: 1}

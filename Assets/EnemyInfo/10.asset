@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 10
   m_EditorClassIdentifier: 
   EnemySprite: {fileID: 217390520, guid: 68f15239b7f229848a0d7040a59e7380, type: 3}
-  EnemyHealth: 50
+  EnemyHealth: 150
   EnemyScale: {x: 1, y: 1}
   EnemiesToSpawnOnDeath:
   - EnemyInfo: {fileID: 11400000, guid: 5799694f421c40f4c948f3f790e4d306, type: 2}
