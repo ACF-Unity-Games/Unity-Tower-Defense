@@ -14,7 +14,7 @@ public class EnemyHandler : MonoBehaviour
 
     public Action OnDeath;
 
-    private List<EnemyDeathInfo> _enemiesToSpawnOnDeath;
+    private List<EnemyDeathInfo> _enemiesToSpawnOnDeath = new();
 
     private void Awake()
     {
